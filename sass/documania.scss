@@ -1,0 +1,648 @@
+// Variables and mixins
+@import "variables";
+@import "mixins";
+
+// Compass CSS3
+@import "compass/css3";
+
+//============================================================
+//============================================================
+
+a:hover,
+a:active,
+a:focus {
+outline: 0;
+}
+
+.xtra20 {padding-left: 20px;}
+
+.mania .well p {font-family: "oswald"; line-height:1.55em;}
+.mania .well h6 {font-family: "oswald"; font-size:1.3em; font-weight:300; margin-bottom: 13px; display: block; letter-spacing:0; }
+
+.mania .well {
+  min-height: 20px;
+  padding: 28px;
+  margin-bottom: 20px;
+  margin-top: -64px;
+ 
+  background-color: transparentize(#fff, .4);
+  border: 1px solid #fff;
+  -webkit-border-radius: 1px;
+     -moz-border-radius: 1px;
+          border-radius: 1px;
+
+  font-size: 1.15em; font-weight:300;
+  @include box-shadow(1px 1px 2px rgba(0,0,0,.1));	
+
+	ul {
+		font-size: .8em;
+		margin: 0;
+		li {
+			list-style: none;
+			margin: 0 0 5px 0;
+			padding: 0;
+		}
+	}
+}
+
+.withvertline {background: transparent url(../img/nav-bg3.png) no-repeat top right}
+
+.mid-pic {
+padding: 4px; margin: 0 15px 10px 18px;
+background-color: transparentize(#fff, .3);
+border: 1px solid #fff;
+@include box-shadow(1px 1px 2px rgba(0,0,0,.1));	
+}
+
+
+body.mania {height: 100%;
+	  font-family: Oswald, sans-serif;
+	  background: transparent url(../img/bedge2.png) repeat 0 0;
+ 	  color: $darkgrey;
+
+	 @include text-shadow(1px 1px 1px rgba(255,255,255,.9));
+
+}
+
+body.mania .recent-posts a {
+	color: $red;
+	
+	&:hover { color: darken($red,6%) }
+}
+
+.mania .well ul.recent-posts {font-size: 1em;}
+
+#topright {position:absolute; z-index: 101; top: 10px; right: 43px;}
+
+ul.mini-social {margin: 5px 0 0 0; padding: 0; list-style: none;
+		li {display: block; float: left; padding-right: 3px;
+		a:hover {@include alpha(.5)}
+		}
+	}
+
+
+.mania form {font-family: proxima-nova-alt;}
+.mania input {font-family: proxima-nova-alt;}
+
+.mania {
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(98,92,88, 0.6);
+  outline: 0;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(98,92,88, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(98,92,88, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 rgba(98,92,88, 0.6);
+}
+
+}
+
+.mania .btn {font-family: proxima-nova-alt; background: transparentize($black, .8);  border: 0px solid rgba(0,0,0,0); color: $white;  @include text-shadow(-1px -1px 0px rgba(0,0,0,.25));}
+
+.redcontrols button.btn, input[type="submit"].btn { background: $red;
+}
+
+.mania .btn-group {text-align: right}
+.lower {margin-top: 40px;}
+
+.mania .btn-group .dropdown-menu {text-align: left}
+
+.mania .form-horizontal {margin-top: 16px;}
+
+.mania .form-horizontal .control-label {
+float: left;
+width: 80px;
+padding-top: 5px;
+text-align: right;
+}
+
+.mania .form-horizontal .controls {
+margin-left: 90px; margin-right: 20px;
+}
+
+.mania h6 {font: 600 1em/1.3em "proxima-nova"; letter-spacing: 1px; text-transform: uppercase; margin: 0px 0 0 0; @include text-shadow(1px 1px 0px rgb(255,255,255));}
+
+.mania h6.tiptop {font: 600 1em/1.3em "proxima-nova"; letter-spacing: 1px; text-transform: uppercase; margin: 0;@include text-shadow(1px 1px 0px rgb(255,255,255));}
+
+.mania p{ font-family: "proxima-nova"; font-size: .9em; line-height: 1.6em;}
+.mania .caption {display: block; margin-top: 10px;}
+.mania .sidebar-copy-project {margin-top: 10px;}
+
+
+.mania .caret {
+display: inline-block;
+width: 0;
+height: 0;
+vertical-align: top;
+border-top: 4px solid $red;
+border-right: 4px solid transparent;
+border-left: 4px solid transparent;
+content: "";
+}
+
+.mania .dropdown-menu {
+
+border: 1px solid $white !important;
+border: 1px solid rgba(255,255,255,1) !important;
+-webkit-border-radius: 2px !important;
+-moz-border-radius: 2px !important;
+border-radius: 2px !important;
+background-color: transparentize(lighten($lightergrey, 20%), .1);
+}
+
+
+
+.addlogo { position:relative;z-index: 1; background: transparent url(../img/logo.png) no-repeat center 10px; padding-top: 120px;}
+
+
+.header {
+	text-align: center;padding: 10px 0 30px 0;
+}
+
+
+
+/*=====================================================================================*/
+/*====================================Carousel Nav=====================================*/
+/*=====================================================================================*/
+
+.carousel-nav { 
+	background: transparent url(../img/nav-bg2.png) no-repeat top right; margin-top: -122px; padding: 145px 14px 0px 0; min-height: 560px; 
+	
+	a {
+	font-weight: 400; font-size: 1.6em; display: block; margin: 0 0 14px 0; padding: 0px 0; color: lighten($darkgrey, 14%); text-transform: uppercase;letter-spacing:-.015em; @include text-shadow(1px 2px 1px rgba(255,255,255,.9));text-align: right;
+	&:hover {text-decoration:none; color: lighten($darkgrey, 4%);}
+	&:active {text-decoration:none; color: darken($red, 7%);}
+	}
+	a.active  {text-decoration:none; color: $red;
+	}
+}
+
+.carousel-nav { 
+	background: transparent url(../img/nav-bg2.png) no-repeat top right; margin-top: -122px; padding: 145px 14px 0px 0; min-height: 560px; 
+}
+
+
+.carousel-nav-proj { 
+	background: transparent url(../img/nav-bg2.png) no-repeat top right; margin-top: -122px; padding: 145px 14px 0px 0; min-height: 560px; 
+	
+	a {
+	font-weight: 400; font-size: 1.6em; display: block; margin: 0 0 14px 0; padding: 0px 0; color: lighten($darkgrey, 14%); text-transform: uppercase;letter-spacing:-.015em; @include text-shadow(1px 2px 1px rgba(255,255,255,.9));text-align: right;
+	&:hover {text-decoration:none; color: lighten($darkgrey, 4%);}
+	&:active {text-decoration:none; color: darken($red, 7%);}
+	}
+	a.active  {text-decoration:none; color: $red;
+	}
+}
+
+
+/*=====================================================================================*/
+/*===================================Homepage Carousel=================================*/
+/*=====================================================================================*/
+
+
+
+
+.theme-default .nivoSlider {
+	border: 1px solid $white;
+	@include box-shadow(1px 1px 2px rgba(0,0,0,.1));	
+}
+
+
+
+
+
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+/*=====================================================================================*/
+/*=================================Start Accordian DD==================================*/
+/*=====================================================================================*/
+
+
+.mania .accordion {
+  margin-bottom: 0px;
+}
+
+.mania .accordion-group {
+  margin-bottom: 0px;
+  border: 0px solid #e5e5e5;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+}
+
+.mania .accordion-heading {
+  border-bottom: 0; marin: 0; padding: 0;
+}
+
+.mania .accordion-heading .accordion-toggle {
+  display: block;
+  padding: 0px;
+}
+.mania .collapse { margin-top: 0px; }
+
+.mania .accordion-toggle {
+  cursor: pointer;
+}
+
+.mania .accordion-inner {
+  padding: 0px; margin: 0px 0 14px 0;
+  border-top: 0px solid #e5e5e5;
+  text-align: right;
+}
+
+.mania .accordion-inner a {
+	font-weight: 300; font-size: 1.3em; display: block; margin: -2px 0 3px 0; padding: 2px 0 0 0; 
+	color: lighten($darkgrey, 14%); 
+	@include text-shadow(1px 2px 1px rgba(255,255,255,.9));
+	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 0em;
+	
+	&:hover {text-decoration:none; color: lighten($darkgrey, 4%);
+	}
+	&:active {text-decoration:none; color: darken($red, 7%);
+	}
+}
+	
+.mania .accordion-inner a.active {text-decoration:none; color: darken($red, 7%);}
+
+/*=====================================================================================*/
+/*====================================End Accordian DD=================================*/
+/*=====================================================================================*/
+
+
+.offsite {
+  display: inline-block;
+  *display: inline;
+  padding: 8px 14px 6px 14px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  *line-height: 20px;
+  color: $white;
+  text-align: center;
+  
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: $red;
+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($red), to(darken($red, 5%)));
+  background-image: -webkit-linear-gradient(top, $red, darken($red, 5%));
+  background-image: -o-linear-gradient(top, $red, darken($red, 5%));
+  background-image: linear-gradient(to bottom, $red, darken($red, 5%));
+  background-image: -moz-linear-gradient(top, $red, darken($red, 5%));
+  background-repeat: repeat-x;
+
+  border: none;
+  font-family: "proxima-nova";
+  @include border-radius(5px);
+  @include text-shadow(-1px -1px 0 darken($red, 20%));
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+
+  .lrgr {display: inline-block;
+	font-size: 1.5em; padding-top: -4px; padding-left: 8px;float: right;}
+	
+  &:hover {
+	color: $white;
+  	background-color: 
+	darken($red, 38%);
+	text-decoration: none;
+	}
+
+}
+
+
+
+
+
+#home, #about, #contact, #inpro, #news, #past, #advocacy, #collab, #awards, #press {margin-left: 35px; margin-top: 19px; color: lighten($darkgrey, 10%);}
+
+
+
+.tile {
+float: left;
+margin-right: 10px;
+margin-bottom: 40px;
+text-align: center;
+	h4 {
+	color: transparentize($black, .6);
+	font-family: "Abril Display Italic", Didot, serif;
+	font-style: italic;
+	font-size: 1.15em;
+	font-weight: 300;
+	letter-spacing: .05em;
+	@include text-shadow(1px 1px 0px rgb(255,255,255));
+	margin: 8px 0 0 0; padding: 0;
+	}
+	.proj-desc {
+	color: transparentize($black, .6);
+	font-family: "proxima-nova";
+	font-weight: bold;
+	font-size: .9em;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	@include text-shadow(1px 1px 0px rgb(255,255,255));
+	
+	}
+}
+
+
+.tiletxt {
+float: left;
+margin-right: 10px;
+margin-bottom: 40px;
+text-align: left;
+	h4 {
+	color: transparentize($black, .6);
+	font-family: "Abril Display Italic", Didot, serif;
+	font-style: italic;
+	font-size: 1.15em;
+	font-weight: 300;
+	letter-spacing: .05em;
+	@include text-shadow(1px 1px 0px rgb(255,255,255));
+	margin: 8px 0 0 0; padding: 0;
+	}
+	.proj-desc {
+	color: transparentize($black, .6);
+	font-family: "proxima-nova";
+	font-weight: bold;
+	font-size: .9em;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	@include text-shadow(1px 1px 0px rgb(255,255,255));
+	
+	}
+}
+
+/////////////////////Project Page Layout/////////////////////
+
+
+
+.intro {width: 65%}
+
+.callout {
+
+width: 26%; 
+font-family: "proxima-nova"; 
+font-weight:100; 
+font-size: 1.1em; 
+@include text-shadow(0px 0px 0px rgba(255,255,255,0));
+color: lighten($darkgrey, 15%);
+letter-spacing: .025em; 
+line-height: .9em; 
+padding: 20px 20px 10px 20px; 
+border: 1px solid $white; 
+background: rgba(0,0,0, .1);
+margin-top: 41px; 
+@include box-shadow(1px 1px 2px rgba(0,0,0,.1));
+
+	strong {display: block;
+	font-family: "oswald"; 
+	font-weight:400; 
+	font-size: 1.4em;
+	text-transform: uppercase;
+	@include text-shadow(1px 1px 0px rgba(255,255,255, .8));
+	margin-bottom: 20px;  
+	}
+	
+	ul {
+	list-style: none;
+	font: 400 .9em "proxima-nova";
+	@include text-shadow(1px 1px 0px rgba(255,255,255, .6));
+	margin: 0; padding: 0;
+		li {margin: 9px 0; padding: 0 0 0 16px; background: transparent url(../img/arrow-sm.png) no-repeat 2px 5px; line-height: 1.2em;}
+	}
+}
+	
+.item h2 {
+	margin-bottom: 30px;margin-top: 2px;
+	text-transform: uppercase;
+	font-family: oswald;
+	font-weight: 300;
+	font-size: 2.6em;
+	color: transparentize($black, .5);
+	@include text-shadow(1px 1px 0px rgb(255,255,255));
+	float: left;
+}
+
+.item h3 {
+	margin-bottom: 0px; margin-top: 0px;
+	letter-spacing: .06em;
+	font-family: "futura-pt", sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 2.2em;
+	color: transparentize(#bd0404, .125);
+	@include text-shadow(1px 1px 0px rgb(255,255,255));
+	
+}	
+
+.item .newh3 {
+	margin-bottom: 0px; margin-top: 0px;padding: 0;
+	letter-spacing: .03em;
+	font-family: "oswald", sans-serif;
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 2em; 
+	color: transparentize($black, .3);
+	@include text-shadow(1px 1px 0px rgb(255,255,255));
+	
+}
+
+.tapebg {
+background-color: transparentize($black, .925); padding: 2px 6px 0 6px; margin: 0px 0px 15px 0; display:inline-block;
+}
+
+.third-font {  
+	font-family:"futura-pt", sans-serif;
+	font-weight:700; 
+	text-transform: uppercase;
+	font-size: 1.4em;
+	letter-spacing: .0475em;
+	color: transparentize(#bd0404, .125);
+}
+
+.pna { 
+font-family: "proxima-nova-alt"; font-weight:100; font-size: 1.6em; 
+}
+
+.home-lede {
+	@include text-shadow(0px 0px 0px rgba(255,255,255,0));
+	color: lighten($darkgrey, 25%); 
+	letter-spacing: .012em; 
+	line-height: 1.2em; 
+	padding:16px 0 60px 5px; 
+	border-top: 1px solid lighten($darkgrey, 40%); 
+	background: transparent url(../img/line.png) no-repeat bottom center; 
+
+	em {font-weight:300;  font-style: normal;}
+}
+
+.logoline {
+
+	height: 100px;
+	background: transparent url(../img/line.png) no-repeat center center; 
+
+}
+
+
+#colophon {position: absolute; bottom: 45px;  font: 400 12.5px/15px proxima-nova-alt; color: lighten($darkgrey, 30%); letter-spacing: .03em; }
+
+.postscript {text-align: center; font: 400 .85em/1.25em proxima-nova-alt; letter-spacing: .0875em;  color: lighten($darkgrey, 30%);  margin: 20px;
+ 	a{color: lighten($darkgrey, 30%);  }
+}
+
+//Sticky footer!
+
+        html, body {
+            height: 100%;
+        }
+        footer {
+            background: transparentize($lightgrey, .8);
+            padding: 17px 0 18px 0;
+			 @include box-shadow(0px -1px 0px rgba(0,0,0,.1));
+			border-top: 1px solid transparentize($white, .4);
+			position: relative; z-index: 222;
+
+        }
+        
+        .wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -63px;
+        }
+        .push {
+            height: 63px;
+        }
+        /* not required for sticky footer; just pushes hero down a bit */
+        .wrapper > .addlogo {
+            padding-top: 120px;
+        }
+
+
+
+
+
+
+
+
+

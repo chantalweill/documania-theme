@@ -1,0 +1,39 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+/* Variables =================================================== */
+
+// greyscale
+
+$black 			: rgb(0,0,0);
+$darkergrey 	: lighten($black, 12%);
+$darkgrey 		: lighten($black, 25%);
+$grey 			: lighten($black, 50%);
+$lightgrey 		: lighten($black, 75%);
+$lightergrey 	: lighten($black, 90%);
+$white 			: rgb(255,255,255);
+
+// 1. COLOUR 					==============================
+
+$bodycolor : #171b1e;
+$textcolor : rgb(48,50,54);/* very dark grey color */
+$hptextcolor : $white;
+$red		: rgb(195,10,10);
+
+
+$basecolor 		: rgb(48,50,54); /* very dark grey color */
+$compcolor 		: adjust-hue($basecolor, 180);
+
+$bordercolor    : lighten($basecolor, 60%);
+
+
+
+
+
+

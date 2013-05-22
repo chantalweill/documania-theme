@@ -1,0 +1,916 @@
+/* Variables =================================================== */
+/* very dark grey color */
+/* very dark grey color */
+/* Mixins =================================================== */
+/* line 226, ../sass/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 227, ../sass/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 228, ../sass/_mixins.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 13, ../sass/documania.scss */
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+}
+
+/* line 17, ../sass/documania.scss */
+.xtra20 {
+  padding-left: 20px;
+}
+
+/* line 19, ../sass/documania.scss */
+.mania .well p {
+  font-family: "oswald";
+  line-height: 1.55em;
+}
+
+/* line 20, ../sass/documania.scss */
+.mania .well h6 {
+  font-family: "oswald";
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-bottom: 13px;
+  display: block;
+  letter-spacing: 0;
+}
+
+/* line 22, ../sass/documania.scss */
+.mania .well {
+  min-height: 20px;
+  padding: 28px;
+  margin-bottom: 20px;
+  margin-top: -64px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #fff;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  font-size: 1.15em;
+  font-weight: 300;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 37, ../sass/documania.scss */
+.mania .well ul {
+  font-size: .8em;
+  margin: 0;
+}
+/* line 40, ../sass/documania.scss */
+.mania .well ul li {
+  list-style: none;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+/* line 48, ../sass/documania.scss */
+.withvertline {
+  background: transparent url(../img/nav-bg3.png) no-repeat top right;
+}
+
+/* line 50, ../sass/documania.scss */
+.mid-pic {
+  padding: 4px;
+  margin: 0 15px 10px 18px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #fff;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 58, ../sass/documania.scss */
+body.mania {
+  height: 100%;
+  font-family: Oswald, sans-serif;
+  background: transparent url(../img/bedge2.png) repeat 0 0;
+  color: #404040;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+/* line 67, ../sass/documania.scss */
+body.mania .recent-posts a {
+  color: #c30a0a;
+}
+/* line 70, ../sass/documania.scss */
+body.mania .recent-posts a:hover {
+  color: #a60909;
+}
+
+/* line 73, ../sass/documania.scss */
+.mania .well ul.recent-posts {
+  font-size: 1em;
+}
+
+/* line 75, ../sass/documania.scss */
+#topright {
+  position: absolute;
+  z-index: 101;
+  top: 10px;
+  right: 43px;
+}
+
+/* line 77, ../sass/documania.scss */
+ul.mini-social {
+  margin: 5px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 78, ../sass/documania.scss */
+ul.mini-social li {
+  display: block;
+  float: left;
+  padding-right: 3px;
+}
+/* line 79, ../sass/documania.scss */
+ul.mini-social li a:hover {
+  opacity: 0.5;
+}
+
+/* line 84, ../sass/documania.scss */
+.mania form {
+  font-family: proxima-nova-alt;
+}
+
+/* line 85, ../sass/documania.scss */
+.mania input {
+  font-family: proxima-nova-alt;
+}
+
+/* line 103, ../sass/documania.scss */
+.mania textarea:focus,
+.mania input[type="text"]:focus,
+.mania input[type="password"]:focus,
+.mania input[type="datetime"]:focus,
+.mania input[type="datetime-local"]:focus,
+.mania input[type="date"]:focus,
+.mania input[type="month"]:focus,
+.mania input[type="time"]:focus,
+.mania input[type="week"]:focus,
+.mania input[type="number"]:focus,
+.mania input[type="email"]:focus,
+.mania input[type="url"]:focus,
+.mania input[type="search"]:focus,
+.mania input[type="tel"]:focus,
+.mania input[type="color"]:focus,
+.mania .uneditable-input:focus {
+  border-color: rgba(98, 92, 88, 0.6);
+  outline: 0;
+  /* IE6-9 */
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(98, 92, 88, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(98, 92, 88, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 rgba(98, 92, 88, 0.6);
+}
+
+/* line 115, ../sass/documania.scss */
+.mania .btn {
+  font-family: proxima-nova-alt;
+  background: rgba(0, 0, 0, 0.2);
+  border: 0px solid rgba(0, 0, 0, 0);
+  color: white;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* line 117, ../sass/documania.scss */
+.redcontrols button.btn, input[type="submit"].btn {
+  background: #c30a0a;
+}
+
+/* line 120, ../sass/documania.scss */
+.mania .btn-group {
+  text-align: right;
+}
+
+/* line 121, ../sass/documania.scss */
+.lower {
+  margin-top: 40px;
+}
+
+/* line 123, ../sass/documania.scss */
+.mania .btn-group .dropdown-menu {
+  text-align: left;
+}
+
+/* line 125, ../sass/documania.scss */
+.mania .form-horizontal {
+  margin-top: 16px;
+}
+
+/* line 127, ../sass/documania.scss */
+.mania .form-horizontal .control-label {
+  float: left;
+  width: 80px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+/* line 134, ../sass/documania.scss */
+.mania .form-horizontal .controls {
+  margin-left: 90px;
+  margin-right: 20px;
+}
+
+/* line 138, ../sass/documania.scss */
+.mania h6 {
+  font: 600 1em/1.3em "proxima-nova";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0px 0 0 0;
+  text-shadow: 1px 1px 0px white;
+}
+
+/* line 140, ../sass/documania.scss */
+.mania h6.tiptop {
+  font: 600 1em/1.3em "proxima-nova";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 1px 1px 0px white;
+}
+
+/* line 142, ../sass/documania.scss */
+.mania p {
+  font-family: "proxima-nova";
+  font-size: .9em;
+  line-height: 1.6em;
+}
+
+/* line 143, ../sass/documania.scss */
+.mania .caption {
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 144, ../sass/documania.scss */
+.mania .sidebar-copy-project {
+  margin-top: 10px;
+}
+
+/* line 147, ../sass/documania.scss */
+.mania .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top: 4px solid #c30a0a;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+/* line 158, ../sass/documania.scss */
+.mania .dropdown-menu {
+  border: 1px solid white !important;
+  border: 1px solid white !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  border-radius: 2px !important;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 170, ../sass/documania.scss */
+.addlogo {
+  position: relative;
+  z-index: 1;
+  background: transparent url(../img/logo.png) no-repeat center 10px;
+  padding-top: 120px;
+}
+
+/* line 173, ../sass/documania.scss */
+.header {
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+
+/*=====================================================================================*/
+/*====================================Carousel Nav=====================================*/
+/*=====================================================================================*/
+/* line 183, ../sass/documania.scss */
+.carousel-nav {
+  background: transparent url(../img/nav-bg2.png) no-repeat top right;
+  margin-top: -122px;
+  padding: 145px 14px 0px 0;
+  min-height: 560px;
+}
+/* line 186, ../sass/documania.scss */
+.carousel-nav a {
+  font-weight: 400;
+  font-size: 1.6em;
+  display: block;
+  margin: 0 0 14px 0;
+  padding: 0px 0;
+  color: #636363;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  text-shadow: 1px 2px 1px rgba(255, 255, 255, 0.9);
+  text-align: right;
+}
+/* line 188, ../sass/documania.scss */
+.carousel-nav a:hover {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+/* line 189, ../sass/documania.scss */
+.carousel-nav a:active {
+  text-decoration: none;
+  color: #a10808;
+}
+/* line 191, ../sass/documania.scss */
+.carousel-nav a.active {
+  text-decoration: none;
+  color: #c30a0a;
+}
+
+/* line 195, ../sass/documania.scss */
+.carousel-nav {
+  background: transparent url(../img/nav-bg2.png) no-repeat top right;
+  margin-top: -122px;
+  padding: 145px 14px 0px 0;
+  min-height: 560px;
+}
+
+/* line 200, ../sass/documania.scss */
+.carousel-nav-proj {
+  background: transparent url(../img/nav-bg2.png) no-repeat top right;
+  margin-top: -122px;
+  padding: 145px 14px 0px 0;
+  min-height: 560px;
+}
+/* line 203, ../sass/documania.scss */
+.carousel-nav-proj a {
+  font-weight: 400;
+  font-size: 1.6em;
+  display: block;
+  margin: 0 0 14px 0;
+  padding: 0px 0;
+  color: #636363;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  text-shadow: 1px 2px 1px rgba(255, 255, 255, 0.9);
+  text-align: right;
+}
+/* line 205, ../sass/documania.scss */
+.carousel-nav-proj a:hover {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+/* line 206, ../sass/documania.scss */
+.carousel-nav-proj a:active {
+  text-decoration: none;
+  color: #a10808;
+}
+/* line 208, ../sass/documania.scss */
+.carousel-nav-proj a.active {
+  text-decoration: none;
+  color: #c30a0a;
+}
+
+/*=====================================================================================*/
+/*===================================Homepage Carousel=================================*/
+/*=====================================================================================*/
+/* line 220, ../sass/documania.scss */
+.theme-default .nivoSlider {
+  border: 1px solid white;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 229, ../sass/documania.scss */
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* line 235, ../sass/documania.scss */
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: none;
+}
+
+/* line 241, ../sass/documania.scss */
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+/* line 248, ../sass/documania.scss */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+}
+
+/* The slices and boxes in the Slider */
+/* line 261, ../sass/documania.scss */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0;
+}
+
+/* line 268, ../sass/documania.scss */
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+}
+
+/* line 274, ../sass/documania.scss */
+.nivo-box img {
+  display: block;
+}
+
+/* Caption styles */
+/* line 277, ../sass/documania.scss */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  z-index: 8;
+  padding: 5px 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=8);
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/* line 295, ../sass/documania.scss */
+.nivo-caption p {
+  padding: 5px;
+  margin: 0;
+}
+
+/* line 299, ../sass/documania.scss */
+.nivo-caption a {
+  display: inline !important;
+}
+
+/* line 302, ../sass/documania.scss */
+.nivo-html-caption {
+  display: none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+/* line 306, ../sass/documania.scss */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer;
+}
+
+/* line 312, ../sass/documania.scss */
+.nivo-prevNav {
+  left: 0px;
+}
+
+/* line 315, ../sass/documania.scss */
+.nivo-nextNav {
+  right: 0px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+/* line 319, ../sass/documania.scss */
+.nivo-controlNav {
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* line 323, ../sass/documania.scss */
+.nivo-controlNav a {
+  cursor: pointer;
+}
+
+/* line 326, ../sass/documania.scss */
+.nivo-controlNav a.active {
+  font-weight: bold;
+}
+
+/*=====================================================================================*/
+/*=================================Start Accordian DD==================================*/
+/*=====================================================================================*/
+/* line 335, ../sass/documania.scss */
+.mania .accordion {
+  margin-bottom: 0px;
+}
+
+/* line 339, ../sass/documania.scss */
+.mania .accordion-group {
+  margin-bottom: 0px;
+  border: 0px solid #e5e5e5;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 347, ../sass/documania.scss */
+.mania .accordion-heading {
+  border-bottom: 0;
+  marin: 0;
+  padding: 0;
+}
+
+/* line 351, ../sass/documania.scss */
+.mania .accordion-heading .accordion-toggle {
+  display: block;
+  padding: 0px;
+}
+
+/* line 355, ../sass/documania.scss */
+.mania .collapse {
+  margin-top: 0px;
+}
+
+/* line 357, ../sass/documania.scss */
+.mania .accordion-toggle {
+  cursor: pointer;
+}
+
+/* line 361, ../sass/documania.scss */
+.mania .accordion-inner {
+  padding: 0px;
+  margin: 0px 0 14px 0;
+  border-top: 0px solid #e5e5e5;
+  text-align: right;
+}
+
+/* line 367, ../sass/documania.scss */
+.mania .accordion-inner a {
+  font-weight: 300;
+  font-size: 1.3em;
+  display: block;
+  margin: -2px 0 3px 0;
+  padding: 2px 0 0 0;
+  color: #636363;
+  text-shadow: 1px 2px 1px rgba(255, 255, 255, 0.9);
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+}
+/* line 375, ../sass/documania.scss */
+.mania .accordion-inner a:hover {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+/* line 377, ../sass/documania.scss */
+.mania .accordion-inner a:active {
+  text-decoration: none;
+  color: #a10808;
+}
+
+/* line 381, ../sass/documania.scss */
+.mania .accordion-inner a.active {
+  text-decoration: none;
+  color: #a10808;
+}
+
+/*=====================================================================================*/
+/*====================================End Accordian DD=================================*/
+/*=====================================================================================*/
+/* line 388, ../sass/documania.scss */
+.offsite {
+  display: inline-block;
+  *display: inline;
+  padding: 8px 14px 6px 14px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  *line-height: 20px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #c30a0a;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c30a0a), to(#ab0909));
+  background-image: -webkit-linear-gradient(top, #c30a0a, #ab0909);
+  background-image: -o-linear-gradient(top, #c30a0a, #ab0909);
+  background-image: linear-gradient(to bottom, #c30a0a, #ab0909);
+  background-image: -moz-linear-gradient(top, #c30a0a, #ab0909);
+  background-repeat: repeat-x;
+  border: none;
+  font-family: "proxima-nova";
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: -1px -1px 0 #620505;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+}
+/* line 420, ../sass/documania.scss */
+.offsite .lrgr {
+  display: inline-block;
+  font-size: 1.5em;
+  padding-top: -4px;
+  padding-left: 8px;
+  float: right;
+}
+/* line 423, ../sass/documania.scss */
+.offsite:hover {
+  color: white;
+  background-color: #0b0101;
+  text-decoration: none;
+}
+
+/* line 436, ../sass/documania.scss */
+#home, #about, #contact, #inpro, #news, #past, #advocacy, #collab, #awards, #press {
+  margin-left: 35px;
+  margin-top: 19px;
+  color: #595959;
+}
+
+/* line 440, ../sass/documania.scss */
+.tile {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* line 445, ../sass/documania.scss */
+.tile h4 {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Abril Display Italic", Didot, serif;
+  font-style: italic;
+  font-size: 1.15em;
+  font-weight: 300;
+  letter-spacing: .05em;
+  text-shadow: 1px 1px 0px white;
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+/* line 455, ../sass/documania.scss */
+.tile .proj-desc {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "proxima-nova";
+  font-weight: bold;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  text-shadow: 1px 1px 0px white;
+}
+
+/* line 468, ../sass/documania.scss */
+.tiletxt {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+/* line 473, ../sass/documania.scss */
+.tiletxt h4 {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Abril Display Italic", Didot, serif;
+  font-style: italic;
+  font-size: 1.15em;
+  font-weight: 300;
+  letter-spacing: .05em;
+  text-shadow: 1px 1px 0px white;
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+/* line 483, ../sass/documania.scss */
+.tiletxt .proj-desc {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "proxima-nova";
+  font-weight: bold;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  text-shadow: 1px 1px 0px white;
+}
+
+/* line 499, ../sass/documania.scss */
+.intro {
+  width: 65%;
+}
+
+/* line 501, ../sass/documania.scss */
+.callout {
+  width: 26%;
+  font-family: "proxima-nova";
+  font-weight: 100;
+  font-size: 1.1em;
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  color: #666666;
+  letter-spacing: .025em;
+  line-height: .9em;
+  padding: 20px 20px 10px 20px;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 41px;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 517, ../sass/documania.scss */
+.callout strong {
+  display: block;
+  font-family: "oswald";
+  font-weight: 400;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+/* line 526, ../sass/documania.scss */
+.callout ul {
+  list-style: none;
+  font: 400 .9em "proxima-nova";
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 0;
+}
+/* line 531, ../sass/documania.scss */
+.callout ul li {
+  margin: 9px 0;
+  padding: 0 0 0 16px;
+  background: transparent url(../img/arrow-sm.png) no-repeat 2px 5px;
+  line-height: 1.2em;
+}
+
+/* line 535, ../sass/documania.scss */
+.item h2 {
+  margin-bottom: 30px;
+  margin-top: 2px;
+  text-transform: uppercase;
+  font-family: oswald;
+  font-weight: 300;
+  font-size: 2.6em;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 0px white;
+  float: left;
+}
+
+/* line 546, ../sass/documania.scss */
+.item h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  letter-spacing: .06em;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2.2em;
+  color: rgba(189, 4, 4, 0.875);
+  text-shadow: 1px 1px 0px white;
+}
+
+/* line 558, ../sass/documania.scss */
+.item .newh3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0;
+  letter-spacing: .03em;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 0px white;
+}
+
+/* line 570, ../sass/documania.scss */
+.tapebg {
+  background-color: rgba(0, 0, 0, 0.075);
+  padding: 2px 6px 0 6px;
+  margin: 0px 0px 15px 0;
+  display: inline-block;
+}
+
+/* line 574, ../sass/documania.scss */
+.third-font {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  letter-spacing: .0475em;
+  color: rgba(189, 4, 4, 0.875);
+}
+
+/* line 583, ../sass/documania.scss */
+.pna {
+  font-family: "proxima-nova-alt";
+  font-weight: 100;
+  font-size: 1.6em;
+}
+
+/* line 587, ../sass/documania.scss */
+.home-lede {
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  color: gray;
+  letter-spacing: .012em;
+  line-height: 1.2em;
+  padding: 16px 0 60px 5px;
+  border-top: 1px solid #a6a6a6;
+  background: transparent url(../img/line.png) no-repeat bottom center;
+}
+/* line 596, ../sass/documania.scss */
+.home-lede em {
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* line 599, ../sass/documania.scss */
+.logoline {
+  height: 100px;
+  background: transparent url(../img/line.png) no-repeat center center;
+}
+
+/* line 607, ../sass/documania.scss */
+#colophon {
+  position: absolute;
+  bottom: 45px;
+  font: 400 12.5px/15px proxima-nova-alt;
+  color: #8c8c8c;
+  letter-spacing: .03em;
+}
+
+/* line 609, ../sass/documania.scss */
+.postscript {
+  text-align: center;
+  font: 400 0.85em/1.25em proxima-nova-alt;
+  letter-spacing: .0875em;
+  color: #8c8c8c;
+  margin: 20px;
+}
+/* line 610, ../sass/documania.scss */
+.postscript a {
+  color: #8c8c8c;
+}
+
+/* line 615, ../sass/documania.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 618, ../sass/documania.scss */
+footer {
+  background: rgba(191, 191, 191, 0.2);
+  padding: 17px 0 18px 0;
+  -webkit-box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 222;
+}
+
+/* line 627, ../sass/documania.scss */
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -63px;
+}
+
+/* line 633, ../sass/documania.scss */
+.push {
+  height: 63px;
+}
+
+/* not required for sticky footer; just pushes hero down a bit */
+/* line 637, ../sass/documania.scss */
+.wrapper > .addlogo {
+  padding-top: 120px;
+}
